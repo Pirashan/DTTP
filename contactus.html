@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us Form</title>
+</head>
+<body style="width:50%; margin: auto; padding: 20px; border: 3px solid black;">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <header>
+        <h1>Contact Me!</h1>
+      </header>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="2aafef99-2ec2-47c6-83e9-12bf6121cc2a">
+        
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        </div>
+
+        <div>
+        <input type="submit" value="Send">
+        </div>
+
+        <input type="hidden" name="redirect" value="https://pirashan.github.io/DTTP/"> 
+    </form>
+</body>
+</html>
+

@@ -8,6 +8,10 @@ body {
     padding: 0;
     }
 
+#contactus {
+    padding: 20 px 0;
+}
+
 .container {
     width: 1024px;
     margin: 0 auto;
