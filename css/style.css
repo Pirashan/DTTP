@@ -8,20 +8,9 @@ body {
     padding: 0;
     }
 
-#contactus {
-    padding: 20 px 0;
-}
-
-#form-container {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    border: 3px solid black;
-  }
-
 .container {
     width: 1024px;
-    margin: 0 auto;
+    height: 150 px;
 }
 
 header {
@@ -54,8 +43,27 @@ img {
     padding: 12px;
 }
 
-#main-bio, #contact-info, #bio-image {
+#contactus {
+    padding: 20 px 0;
+}
+
+#form-container {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    border: 3px solid black;
+  }
+
+#form_items {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+  #main-bio, #contact-info, #bio-image {
     float: left;
+    box-sizing: border-box;
 }
 
 #contact-info {
@@ -65,8 +73,11 @@ img {
 
 p {
     float: right;
+    box-sizing: border-box;
 }
 
-a:link {
-    color: #d21034;
-}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
